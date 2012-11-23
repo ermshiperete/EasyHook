@@ -86,6 +86,10 @@ Parameters:
             List = List->Next;
         }
 
+		// Remove from global slot list
+		GlobalSlotList[Hook->HLSIndex] = 0;
+		Hook->HLSIndex = -1;
+
         // add to removal list
         Hook->Next = GlobalRemovalListHead.Next;
         GlobalRemovalListHead.Next = Hook;
