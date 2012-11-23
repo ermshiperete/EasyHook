@@ -1,0 +1,9 @@
+obj/
+Debug/
+/ipch/
+/Build/
+
+*.user
+*.sdf
+*.suo
+*.swp
